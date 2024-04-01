@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}.container{
+    max-width: 65%;
+    margin:0 auto;
+}
+header .header-left .logo{
+    font-size: 22px;
+    margin-right: 20px;
+    color: #000;
+}
+header .header-left .logo span{
+    color: #407BFF;
+}
+header .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+}
+header .header .header-left{
+    display: flex;
+    align-items: baseline;
+}
+header .header .header-left .drop{
+    font-size: 14px;
+    margin-left: 4px;
+}
+header .header .header-left ul{
+    display: flex;
+}
+header .header .header-left ul li:hover{
+    /* background-color: #407BFF; */
+}
+header .header .header-right{
+    display: flex;
+}
+header .header .header-left ul li a{
+    margin-right: 20px;
+    font-size: 16px;
+    color: #00000080;
+}
+header .header .header-right .sign-in{
+    width: 88px ;
+    height:35px ;
+    border: 1px solid #939393;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #00000080;
+
+}
+header .header .header-right .register{
+    background-color: #407BFF;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    font-size: 14px;
+}
+header .header .header-left .dropdown{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 140px;
+    /* margin-top: 12px; */
+    padding: 20px 0 10px 8px;
+    box-shadow: -webkit-box-shadow: -8px 9px 9px -10px rgba(0,0,0,0.71);
+    -moz-box-shadow: -8px 9px 9px -10px rgba(0,0,0,0.71);
+    box-shadow: -8px 9px 9px -10px rgba(0,0,0,0.71);;
+}
+header .start-dropdown:hover .dropdown{
+    visibility: visible;
+}
+
+header .header .header-left .dropdown li{
+    margin-bottom: 12px;
+}
+header .header .header-left .menu-two{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    margin-left: 118px;
+    margin-top: -40px;
+    width: 150px;
+    visibility: hidden;
+    padding: 20px 0 10px 8px;
+    box-shadow: -webkit-box-shadow: -8px 9px 9px -10px rgba(0,0,0,0.71);
+    -moz-box-shadow: -8px 9px 9px -10px rgba(0,0,0,0.71);
+    box-shadow: -8px 9px 9px -10px rgba(0,0,0,0.71);;
+}
+header .header-left .second-dropdown:hover .menu-two{
+    visibility: visible;
+}
